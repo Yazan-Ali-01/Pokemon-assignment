@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Table of Contents
 
-## Getting Started
+- [Introduction](#introduction)
+- [Features](#features)
+- [Demo](#demo)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Feedback](#feedback)
+- [Contributing](#contributing)
+- [Contact](#contact)
 
-First, run the development server:
+## Introduction <a name="introduction"></a>
+
+This application is built using Next.js and leverages the PokeAPI to display a dynamic list of Pokémon categories, enabling users to explore Pokémon by their types. Additionally, it utilizes React-Query for state management and Styled-Components for styling, with data visualization supported by React-ApexCharts.
+
+## Features <a name="features"></a>
+
+- Browse all Pokémon categories on the initial load.
+- Click on a category to view all Pokémon within that category.
+- View detailed information and statistical data about each Pokémon in a visually appealing graph.
+- Search functionality to filter through Pokémon names.
+- Display Pokémon under multiple categories if applicable.
+
+## Demo <a name="demo"></a>
+
+> **Note:** Live demo and screenshots will be added once the project is deployed.
+
+## Technologies Used <a name="technologies-used"></a>
+
+- **Next.js** for server-side rendering and routing.
+- **React-Query** for efficient data fetching and state management.
+- **Tailwind-CSS** for customized and readable modern CSS.
+- **React-ApexCharts** for rendering responsive and interactive charts.
+
+## Installation <a name="installation"></a>
+
+To set up this project locally, follow these steps:
+
+1. Clone the repository:
+git clone https://github.com/Yazan-Ali-01/Pokemon-Dashboard.git
+
+2. Navigate to the project directory:
+cd Pokemon-Dashboard
+
+
+3. Install dependencies:
+npm install
+
+4. Start the development server:
+npm run dev
+
+5. Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
+
+## Docker Setup
+
+### Building the Docker Image
+
+To containerize the application, first build the Docker image by running the following command in your project directory:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+docker build -t pokemon-dashboard .
 ```
+```bash
+docker run -p 3000:3000 pokemon-dashboard
+```
+## Usage <a name="usage"></a>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+After installation, the application will be running on your local server. Use the navigation features on the home page to explore different Pokémon and their details.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Feedback <a name="feedback"></a>
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+We value your input! If you have feedback or issues, please open an issue in the GitHub repository or submit your suggestions via email.
 
-## Learn More
+## Contributing <a name="contributing"></a>
 
-To learn more about Next.js, take a look at the following resources:
+Contributions are welcome! Please fork the repository, make your changes, and submit a pull request.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contact <a name="contact"></a>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Feel free to reach out for more information:
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Email: [yazan.ali.dev@gmail.com](mailto:yazan.ali.dev@gmail.com)
+- LinkedIn: [Yazan Ali](https://www.linkedin.com/in/yazan-ali/)

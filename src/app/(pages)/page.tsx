@@ -34,7 +34,9 @@ export default function Home() {
     handleSearch();
   };
 
-  if (isLoading) return <span className="loading loading-ring loading-sm"></span>;
+  if (isLoading) return <div className="flex justify-center items-center min-h-screen">
+    <span className="loading loading-ring loading-lg"></span>
+  </div>
   if (error) return <div>An error occurred: {error.message}</div>;
 
   return (

@@ -13,12 +13,12 @@
 
 * {
   scrollbar-width: thin;
-  scrollbar-color: aqua gray;
+  scrollbar-color: #38bdf8 #1D232A;
 }
 
 /* Works on Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-  width: 0.2px; /* width of the entire scrollbar */
+  width: 0.1px; /* width of the entire scrollbar */
 }
 
 *::-webkit-scrollbar-track {

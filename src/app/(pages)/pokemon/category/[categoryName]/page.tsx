@@ -40,7 +40,7 @@ export default function Category({ params }: { params: { categoryName: string } 
 
   const pokemonDetails = usePokemonDetails(currentPageData);
 
-  if (isLoadingCategory) return <span className="loading loading-ring loading-sm"></span>;
+  if (isLoadingCategory) return <span className="loading loading-ring loading-sm mx-auto"></span>;
   if (typesError) return <p>Error: {typesError.message}</p>;
 
   const totalPages = Math.ceil((categoryData?.pokemon.length || 0) / itemsPerPage);
