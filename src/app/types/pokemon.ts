@@ -25,6 +25,7 @@ export type LanguageName = {
 };
 
 export type Pokemon = {
+  id: number | string
   pokemon: {
     name: string;
     url: string;
@@ -33,6 +34,7 @@ export type Pokemon = {
 };
 
 export type CategoryDetails = {
+  count: number
   damage_relations: {
     double_damage_from: DamageRelation[];
     double_damage_to: DamageRelation[];
@@ -82,7 +84,9 @@ export interface PokemonDetails {
 }
 
 export interface Ability {
-  // Define the Ability type here
+  ability: {
+    name: string
+  }
 }
 
 export interface Form {
