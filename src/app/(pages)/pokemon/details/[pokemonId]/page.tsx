@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { fetchPokemonDetails } from '@/src/app/services/clientApi';
 import { PokemonDetails } from '@/src/app/types/pokemon';
 import Chart from 'react-apexcharts';
+import { ApexOptions } from 'apexcharts';
 
 const PokemonDetailsPage = ({ params }: { params: { pokemonId: string } }) => {
   const { pokemonId } = params;
@@ -19,7 +20,7 @@ const PokemonDetailsPage = ({ params }: { params: { pokemonId: string } }) => {
   if (!pokemon) return <p>No Pokemon found.</p>;
   const chartOptions = {
     chart: {
-      type: "bar",
+      type: "bar" as "bar",
       toolbar: {
         show: false // Hides the toolbar
       }
@@ -113,7 +114,7 @@ const PokemonDetailsPage = ({ params }: { params: { pokemonId: string } }) => {
 
         {/* Right Column for Chart */}
         <div className='col-span-1'>
-          <Chart options={chartOptions} series={chartSeries} type="bar" height={400} />
+          <Chart options={chartOptions as ApexOptions} series={chartSeries} type="bar" height={400} />
         </div>
       </div>
     </div>
