@@ -31,6 +31,7 @@ This application is built using Next.js and leverages the PokeAPI to display a d
 - **Next.js** for server-side rendering and routing.
 - **React-Query** for efficient data fetching and state management.
 - **Tailwind-CSS** for customized and readable modern CSS.
+  - **Current Issue:** Tailwind CSS classes are not applied correctly in the production build. This is an active issue being addressed.
 - **React-ApexCharts** for rendering responsive and interactive charts.
 
 ## Installation <a name="installation"></a>

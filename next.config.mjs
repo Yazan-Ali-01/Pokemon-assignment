@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'standalone',
+  optimizeCss: false,
+  enableBabelRuntime: true,
   images: {
     remotePatterns: [
       {
